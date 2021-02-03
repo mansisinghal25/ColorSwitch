@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="650.0" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="480.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ColourSwitchGame.HomePage">
+   <children>
+      <ImageView fitHeight="89.0" fitWidth="85.0" layoutX="34.0" layoutY="516.0" onMouseClicked="#resumeGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cmd.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="instructions" fitHeight="85.0" fitWidth="85.0" layoutX="140.0" layoutY="516.0" onMouseClicked="#OpenInstructions" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@instruct.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" layoutY="516.0" onMouseClicked="#OpenGift" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gift.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="95.0" layoutX="362.0" layoutY="511.0" onMouseClicked="#exitApp" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@quit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="140.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="322.0" layoutX="80.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@heading.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="72.0" layoutY="445.0" prefHeight="32.0" prefWidth="95.0" text="Highscore:" textFill="#f0eff2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="449.0" prefHeight="23.0" prefWidth="59.0" text="Stars:" textFill="#f5f4f4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="32.0" fitWidth="44.0" layoutX="410.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@star.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="crcles" fitHeight="201.0" fitWidth="200.0" layoutX="141.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@crcles.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="ans" layoutX="167.0" layoutY="443.0" prefHeight="39.0" prefWidth="35.0" text="0" textFill="#eeeaea">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="play" fitHeight="70.0" fitWidth="59.0" layoutX="222.0" layoutY="275.0" onMouseClicked="#playGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@play.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="stars" layoutX="320.0" layoutY="454.0" prefHeight="19.0" prefWidth="85.0" text="0000000" textFill="#e8e1e1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

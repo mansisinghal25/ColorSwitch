@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#play_func" prefHeight="650.0" prefWidth="480.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ColourSwitchGame.game">
+    <children>
+
+        <AnchorPane fx:id="a1" layoutX="106.0" layoutY="-70.0" prefHeight="270.0" prefWidth="270.0">
+            <children>
+                <Arc fx:id="a1a1" fill="#1f78ff00" layoutX="135.0" layoutY="135.0" length="88.0" radiusX="120.0" radiusY="120.0" startAngle="45.0" stroke="#7712ea" strokeLineCap="BUTT" strokeWidth="20.0" />
+                <Arc fx:id="a1a2" fill="#1f93ff00" layoutX="135.0" layoutY="135.0" length="88.0" radiusX="120.0" radiusY="120.0" startAngle="135.0" stroke="#f81056" strokeLineCap="BUTT" strokeWidth="20.0" />
+                <Arc fx:id="a1a3" fill="#1f78ff00" layoutX="135.0" layoutY="135.0" length="88.0" radiusX="120.0" radiusY="120.0" startAngle="225.0" stroke="#1ceae3" strokeLineCap="BUTT" strokeWidth="20.0" />
+                <Arc fx:id="a1a4" fill="#1f93ff00" layoutX="135.0" layoutY="135.0" length="88.0" radiusX="120.0" radiusY="120.0" startAngle="315.0" stroke="#fffb00" strokeLineCap="BUTT" strokeWidth="20.0" />
+            </children>
+        </AnchorPane>
+
+        <AnchorPane fx:id="a2" layoutX="113.0" layoutY="250.0" prefHeight="250.0" prefWidth="256.0" translateY="-310.0">
+            <children>
+                <Arc fx:id="a2a1" centerX="128.0" centerY="125.0" fill="#1f93ff00" length="88.0" radiusX="90.0" radiusY="90.0" startAngle="315.0" stroke="#f81056" strokeLineCap="BUTT" strokeWidth="15.0" />
+                <Arc fx:id="a2a2" centerX="100.0" centerY="100.0" fill="#1f78ff00" layoutX="28.0" layoutY="25.0" length="88.0" radiusX="90.0" radiusY="90.0" startAngle="45.0" stroke="#7712ea" strokeLineCap="BUTT" strokeWidth="15.0" />
+                <Arc fx:id="a2a3" centerX="128.0" centerY="125.0" fill="#1f93ff00" length="88.0" radiusX="90.0" radiusY="90.0" startAngle="135.0" stroke="#fffb00" strokeLineCap="BUTT" strokeWidth="15.0" />
+                <Arc fx:id="a2a4" centerX="128.0" centerY="125.0" fill="#1f78ff00" length="88.0" radiusX="90.0" radiusY="90.0" startAngle="225.0" stroke="#1ceae3" strokeLineCap="BUTT" strokeWidth="15.0" />
+                <Circle fx:id="starc1" centerX="128.0" centerY="125.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                <ImageView fx:id="star1" fitHeight="37.0" fitWidth="37.0" layoutX="108.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@star.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+
+        <AnchorPane fx:id="a" layoutX="0.0" layoutY="-250.0" prefHeight="650.0" prefWidth="480.0">
+            <children>
+
+                <AnchorPane fx:id="acs1" layoutX="228.0" layoutY="120.0" prefHeight="24.0" prefWidth="24.0">
+                    <children>
+                        <Arc fill="#7712ea" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="0.0" stroke="#7712ea" strokeType="INSIDE" type="ROUND" />
+                        <Arc fill="#fffb00" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="90.0" stroke="#fffb00" strokeType="INSIDE" type="ROUND" />
+                        <Arc fill="#1ceae3" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="180.0" stroke="#1ceae3" strokeType="INSIDE" type="ROUND" />
+                        <Arc fx:id="switcher1" fill="#f81056" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="270.0" stroke="#f81056" strokeType="INSIDE" type="ROUND" />
+                    </children>
+                </AnchorPane>
+
+                <AnchorPane fx:id="a3" layoutX="138.0" layoutY="-200.0" prefHeight="200.0" prefWidth="200.0" translateY="-40.0">
+                    <children>
+                        <Line fx:id="a3a1" endX="187.4000244140625" endY="12.0" layoutX="-1.0" layoutY="8.0" startX="14.599990844726562" startY="12.0" stroke="#f81056" strokeWidth="15.0" />
+                        <Line fx:id="a3a2" endX="13.800003051757812" endY="174.39999389648438" layoutX="-1.0" layoutY="8.0" startX="13.800003051757812" startY="11.199996948242188" stroke="#7712ea" strokeWidth="15.0" />
+                        <Line fx:id="a3a3" endX="187.4000244140625" endY="12.799999237060547" layoutX="-1.0" layoutY="8.0" startX="187.4000244140625" startY="175.1999969482422" stroke="#fffb00" strokeWidth="15.0" />
+                        <Line fx:id="a3a4" endX="187.4000244140625" endY="175.1999969482422" layoutX="-1.0" layoutY="8.0" startX="14.599990844726562" startY="175.20001220703125" stroke="#1ceae3" strokeWidth="15.0" />
+                        <Circle fx:id="starc2" centerX="100.0" centerY="100.0" fill="#101111" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fx:id="star2" fitHeight="37.0" fitWidth="37.0" layoutX="82.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@star.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+
+                <AnchorPane fx:id="acs2" layoutX="228.0" layoutY="-350.0" prefHeight="24.0" prefWidth="24.0">
+                    <children>
+                        <Arc fill="#7712ea" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="0.0" stroke="#7712ea" strokeType="INSIDE" type="ROUND" />
+                        <Arc fill="#fffb00" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="90.0" stroke="#fffb00" strokeType="INSIDE" type="ROUND" />
+                        <Arc fill="#1ceae3" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="180.0" stroke="#1ceae3" strokeType="INSIDE" type="ROUND" />
+                        <Arc fx:id="switcher2" fill="#f81056" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="270.0" stroke="#f81056" strokeType="INSIDE" type="ROUND" />
+                    </children>
+                </AnchorPane>
+
+            </children>
+        </AnchorPane>
+
+        <AnchorPane fx:id="aa" layoutX="0.0" layoutY="-250.0" prefHeight="650.0" prefWidth="480.0">
+            <children>
+
+                <AnchorPane fx:id="a4" layoutY="-450.0" prefHeight="80.0" prefWidth="960.0">
+                    <children>
+                        <Line fx:id="a4a1" endX="120.0" endY="32.0" layoutY="1.0" startY="32.0" stroke="#f81056" strokeWidth="15.0" />
+                        <Line fx:id="a4a2" endX="240.0" endY="32.0" startX="120.0" startY="32.0" stroke="#7712ea" strokeWidth="15.0" />
+                        <Line fx:id="a4a3" endX="360.0" endY="32.0" startX="240.0" startY="32.0" stroke="#fffb00" strokeWidth="15.0" />
+                        <Line fx:id="a4a4" endX="480.0" endY="32.0" startX="360.0" startY="32.0" stroke="#1ceae3" strokeWidth="15.0" />
+                        <Line fx:id="a4a5" endX="120.0" endY="32.0" layoutX="481.0" layoutY="0.5" startY="32.0" stroke="#f81056" strokeWidth="15.0" />
+                        <Line fx:id="a4a6" endX="240.0" endY="32.0" layoutX="481.0" startX="120.0" startY="32.0" stroke="#7712ea" strokeWidth="15.0" />
+                        <Line fx:id="a4a7" endX="360.0" endY="32.0" layoutX="481.0" startX="240.0" startY="32.0" stroke="#fffb00" strokeWidth="15.0" />
+                        <Line fx:id="a4a8" endX="471.20001220703125" endY="32.0" layoutX="481.0" startX="360.0" startY="32.0" stroke="#1ceae3" strokeWidth="15.0" />
+                    </children>
+                </AnchorPane>
+
+                <Circle fx:id="starc3" centerX="240.0" centerY="-510.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                <ImageView fx:id="star3" fitHeight="37.0" fitWidth="37.0" layoutX="220.0" layoutY="-520.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@star.png" />
+                    </image>
+                </ImageView>
+
+                <AnchorPane fx:id="a5" layoutX="220.0" layoutY="-800.0" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Rectangle fx:id="a5a1" arcHeight="5.0" arcWidth="5.0" fill="#7712ea" height="89.0" layoutX="87.0" layoutY="1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="22.0" />
+                        <Rectangle fx:id="a5a2" arcHeight="5.0" arcWidth="5.0" fill="#fffb00" height="22.0" layoutX="-1.0" layoutY="89.0" stroke="TRANSPARENT" strokeType="INSIDE" width="89.0" />
+                        <Rectangle fx:id="a5a3" arcHeight="5.0" arcWidth="5.0" fill="#1ceae3" height="22.0" layoutX="108.0" layoutY="89.0" stroke="TRANSPARENT" strokeType="INSIDE" width="89.0" />
+                        <Rectangle fx:id="a5a4" arcHeight="5.0" arcWidth="5.0" fill="#f81056" height="89.0" layoutX="87.0" layoutY="110.0" stroke="TRANSPARENT" strokeType="INSIDE" width="22.0" />
+                    </children>
+                </AnchorPane>
+
+                <AnchorPane fx:id="acs3" layoutX="228.0" layoutY="-820.0" prefHeight="24.0" prefWidth="24.0">
+                    <children>
+                        <Arc fill="#7712ea" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="0.0" stroke="#7712ea" strokeType="INSIDE" type="ROUND" />
+                        <Arc fill="#fffb00" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="90.0" stroke="#fffb00" strokeType="INSIDE" type="ROUND" />
+                        <Arc fill="#1ceae3" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="180.0" stroke="#1ceae3" strokeType="INSIDE" type="ROUND" />
+                        <Arc fx:id="switcher3" fill="#f81056" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="270.0" stroke="#f81056" strokeType="INSIDE" type="ROUND" />
+                    </children>
+                </AnchorPane>
+
+                <AnchorPane fx:id="acs4" layoutX="228.0" layoutY="-1240.0" prefHeight="24.0" prefWidth="24.0">
+                    <children>
+                        <Arc fill="#7712ea" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="0.0" stroke="#7712ea" strokeType="INSIDE" type="ROUND" />
+                        <Arc fill="#fffb00" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="90.0" stroke="#fffb00" strokeType="INSIDE" type="ROUND" />
+                        <Arc fill="#1ceae3" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="180.0" stroke="#1ceae3" strokeType="INSIDE" type="ROUND" />
+                        <Arc fx:id="switcher4" fill="#f81056" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="270.0" stroke="#f81056" strokeType="INSIDE" type="ROUND" />
+                    </children>
+                </AnchorPane>
+
+                <AnchorPane fx:id="acs5" layoutX="228.0" layoutY="-1600.0" prefHeight="24.0" prefWidth="24.0">
+                    <children>
+                        <Arc fill="#7712ea" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="0.0" stroke="#7712ea" strokeType="INSIDE" type="ROUND" />
+                        <Arc fill="#fffb00" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="90.0" stroke="#fffb00" strokeType="INSIDE" type="ROUND" />
+                        <Arc fill="#1ceae3" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="180.0" stroke="#1ceae3" strokeType="INSIDE" type="ROUND" />
+                        <Arc fx:id="switcher5" fill="#f81056" layoutX="12.0" layoutY="12.0" length="90.0" radiusX="12.0" radiusY="12.0" startAngle="270.0" stroke="#f81056" strokeType="INSIDE" type="ROUND" />
+                    </children>
+                </AnchorPane>
+
+                <Circle fx:id="starc4" centerX="240.0" centerY="-1084.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                <ImageView fx:id="star4" fitHeight="37.0" fitWidth="37.0" layoutX="220.0" layoutY="-1104.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@star.png" />
+                    </image>
+                </ImageView>
+
+                <AnchorPane fx:id="a6" layoutX="121.0" layoutY="-1504.0" prefHeight="241.0" prefWidth="242.0">
+                    <children>
+                        <Circle fx:id="a6a1" fill="#7712ea" layoutX="81.0" layoutY="213.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a2" fill="#7712ea" layoutX="119.0" layoutY="220.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a3" fill="#7712ea" layoutX="157.0" layoutY="211.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a4" fill="#7712ea" layoutX="191.0" layoutY="193.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a5" fill="#1ceae3" layoutX="82.0" layoutY="29.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a6" fill="#1ceae3" layoutX="120.0" layoutY="22.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a7" fill="#1ceae3" layoutX="159.0" layoutY="28.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a8" fill="#f81056" layoutX="194.0" layoutY="51.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a9" fill="#1ceae3" layoutX="47.0" layoutY="51.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a10" fill="#fffb00" layoutX="21.0" layoutY="126.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a11" fill="#fffb00" layoutX="31.0" layoutY="161.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a12" fill="#fffb00" layoutX="50.0" layoutY="193.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a13" fill="#f81056" layoutX="220.0" layoutY="127.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a14" fill="#f81056" layoutX="213.0" layoutY="161.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a15" fill="#f81056" layoutX="213.0" layoutY="89.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="a6a16" fill="#fffb00" layoutX="29.0" layoutY="88.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="starc5" centerX="120.0" centerY="120.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fx:id="star5" fitHeight="37.0" fitWidth="37.0" layoutX="100.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@star.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+
+                <AnchorPane fx:id="a7" layoutX="137.0" layoutY="-1050.0" prefHeight="118.0" prefWidth="115.0">
+                    <children>
+                        <Arc fx:id="a7a1" centerX="100.0" centerY="100.0" fill="#1f93ff00" layoutX="-43.0" layoutY="-41.0" length="88.0" radiusX="40.0" radiusY="40.0" startAngle="315.0" stroke="#f81056" strokeLineCap="BUTT" strokeWidth="12.0" />
+                        <Arc fx:id="a7a2" centerX="100.0" centerY="100.0" fill="#1f78ff00" layoutX="-43.0" layoutY="-41.0" length="88.0" radiusX="40.0" radiusY="40.0" startAngle="45.0" stroke="#7712ea" strokeLineCap="BUTT" strokeWidth="12.0" />
+                        <Arc fx:id="a7a3" centerX="100.0" centerY="100.0" fill="#1f93ff00" layoutX="-43.0" layoutY="-41.0" length="88.0" radiusX="40.0" radiusY="40.0" startAngle="135.0" stroke="#fffb00" strokeLineCap="BUTT" strokeWidth="12.0" />
+                        <Arc fx:id="a7a4" centerX="100.0" centerY="100.0" fill="#1f78ff00" layoutX="-43.0" layoutY="-41.0" length="88.0" radiusX="40.0" radiusY="40.0" startAngle="225.0" stroke="#1ceae3" strokeLineCap="BUTT" strokeWidth="12.0" />
+                    </children>
+                </AnchorPane>
+
+                <AnchorPane fx:id="a8" layoutX="228.0" layoutY="-1050.0" prefHeight="118.0" prefWidth="115.0">
+                    <children>
+                        <Arc fx:id="a8a1" centerX="100.0" centerY="100.0" fill="#1f93ff00" layoutX="-43.0" layoutY="-41.0" length="88.0" radiusX="40.0" radiusY="40.0" startAngle="315.0" stroke="#fffb00" strokeLineCap="BUTT" strokeWidth="12.0" />
+                        <Arc fx:id="a8a2" centerX="100.0" centerY="100.0" fill="#1f78ff00" layoutX="-43.0" layoutY="-41.0" length="88.0" radiusX="40.0" radiusY="40.0" startAngle="45.0" stroke="#7712ea" strokeLineCap="BUTT" strokeWidth="12.0" />
+                        <Arc fx:id="a8a3" centerX="100.0" centerY="100.0" fill="#1f93ff00" layoutX="-43.0" layoutY="-41.0" length="88.0" radiusX="40.0" radiusY="40.0" startAngle="135.0" stroke="#f81056" strokeLineCap="BUTT" strokeWidth="12.0" />
+                        <Arc fx:id="a8a4" centerX="100.0" centerY="100.0" fill="#1f78ff00" layoutX="-43.0" layoutY="-41.0" length="88.0" radiusX="40.0" radiusY="40.0" startAngle="225.0" stroke="#1ceae3" strokeLineCap="BUTT" strokeWidth="12.0" />
+                    </children>
+                </AnchorPane>
+
+            </children>
+        </AnchorPane>
+
+
+        <ImageView fx:id="PauseButton" fitHeight="56.0" fitWidth="52.0" layoutX="23.0" layoutY="14.0" onMouseClicked="#openPauseMenu" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@cmd.png" />
+            </image>
+        </ImageView>
+
+        <Ellipse fx:id="ball" centerY="500.0" fill="#f81056" layoutX="240.0" layoutY="-20.0" radiusX="11.0" radiusY="11.0" stroke="BLACK" strokeType="INSIDE" />
+        <Label fx:id="score_label" layoutX="430.0" layoutY="15.0" text="0" textFill="#f8efef">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="click_to_play" layoutX="183.0" layoutY="534.0" prefHeight="26.0" prefWidth="115.0" text="Click to Play" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+
+    </children>
+</AnchorPane>

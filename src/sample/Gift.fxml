@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="480.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ColourSwitchGame.Gift">
+   <children>
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="14.0" layoutY="22.0" onMouseClicked="#goHomePage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="193.0" layoutX="144.0" layoutY="17.0" pickOnBounds="true">
+         <image>
+            <Image url="@color-switch-930x515.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="186.0" layoutY="67.0" prefHeight="63.0" prefWidth="121.0" text="PRIZES" textFill="#f5efef">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="34.0" fitWidth="53.0" layoutX="295.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@stars.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="100.0" layoutY="130.0" prefHeight="43.0" prefWidth="221.0" text="Spin the wheel and win some " textFill="#eb6ebd" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="wheel" layoutX="77.0" layoutY="231.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <Arc fx:id="s50" centerX="150.0" centerY="150.0" fill="DODGERBLUE" length="60.0" radiusX="150.0" radiusY="150.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Arc fx:id="s10" centerX="150.0" centerY="150.0" fill="#fff31f" length="60.0" radiusX="150.0" radiusY="150.0" startAngle="60.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Arc fx:id="s30" centerX="150.0" centerY="150.0" fill="#ff861f" length="60.0" radiusX="150.0" radiusY="150.0" startAngle="120.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Arc fx:id="s20" centerX="150.0" centerY="150.0" fill="#22cf0e" length="60.0" radiusX="150.0" radiusY="150.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Arc fx:id="s100" centerX="150.0" centerY="150.0" fill="#f03eae" length="60.0" radiusX="150.0" radiusY="150.0" startAngle="240.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Arc fx:id="s5" centerX="150.0" centerY="150.0" fill="#9614ac" length="60.0" radiusX="150.0" radiusY="150.0" startAngle="300.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Label layoutX="136.0" layoutY="20.0" prefHeight="35.0" prefWidth="30.0" text="10">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="giftL" layoutX="225.0" layoutY="85.0" text="50">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="224.0" layoutY="189.0" text="5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="244.0" text="100">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="189.0" text="20">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="85.0" text="30">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Polygon layoutX="225.0" layoutY="300.0" points="-17.800003051757812, 14.399993896484375, 20.600021362304688, 14.399993896484375, 2.1999969482421875, -13.600006103515625" stroke="BLACK" strokeType="INSIDE" />
+      <Line fx:id="arrow" endX="-100.0" endY="137.0" layoutX="327.0" layoutY="240.0" startX="-100.00001525878906" startY="63.0" strokeWidth="10.0" />
+   </children>
+</AnchorPane>
